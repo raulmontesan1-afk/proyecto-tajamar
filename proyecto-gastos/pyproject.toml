@@ -1,0 +1,24 @@
+[project]
+name = "proyecto-gastos"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Raul",email = "raulmontesan1@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "tabulate (>=0.10.0,<0.11.0)"
+]
+
+[tool.poetry]
+packages = [{include = "proyecto_gastos", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.3,<10.0.0)"
+]
